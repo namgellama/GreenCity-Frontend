@@ -38,14 +38,14 @@ function ProductDetail() {
 
 	return (
 		<section className="w-full lg:w-[1200px] mx-auto my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 py-2 px-4 lg:px-2 cursor-pointer justify-center">
-			<div className="mb-8">
+			<div className="mb-8 md:flex md:justify-center">
 				<img
-					className="lg:w-[600px] h-[600px] object-cover rounded-md"
+					className="lg:w-[600px] h-[500px] md:w-[700px] md:h-[700px] object-cover rounded-md"
 					src={product.image}
 					alt=""
 				/>
 			</div>
-			<main className="md:px-4 lg:ml-2">
+			<main className="md:px-6 lg:ml-2">
 				<h1 className="text-3xl font-bold uppercase">
 					{product.title}
 					<span className="text-2xl font-medium"> ({product.flavour})</span>
