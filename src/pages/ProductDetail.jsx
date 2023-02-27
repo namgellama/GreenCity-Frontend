@@ -38,9 +38,9 @@ function ProductDetail() {
 
 	return (
 		<section className="w-full lg:w-[1200px] mx-auto my-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 py-2 px-4 lg:px-2 cursor-pointer justify-center">
-			<div className="mb-8 md:flex md:justify-center">
+			<div className="mb-8 md:flex md:justify-center px-1">
 				<img
-					className="lg:w-[600px] h-[500px] md:w-[700px] md:h-[700px] object-cover rounded-md"
+					className="lg:w-[600px] lg:h-[520px] h-[450px] md:h-[700px] w-screen object-cover rounded-md"
 					src={product.image}
 					alt=""
 				/>
