@@ -1,7 +1,7 @@
 const products = [
 	{
 		_id: '1',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/cranberry.webp',
 		featured: true,
@@ -11,7 +11,7 @@ const products = [
 	},
 	{
 		_id: '2',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/german_larger.webp',
 		featured: true,
@@ -21,7 +21,7 @@ const products = [
 	},
 	{
 		_id: '3',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/ginger.webp',
 		featured: true,
@@ -31,7 +31,7 @@ const products = [
 	},
 	{
 		_id: '4',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/kiwi_mint.webp',
 		featured: false,
@@ -41,7 +41,7 @@ const products = [
 	},
 	{
 		_id: '5',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/peach.webp',
 		featured: false,
@@ -51,7 +51,7 @@ const products = [
 	},
 	{
 		_id: '6',
-		title: '3 Sisters Beer',
+		title: '3 Sisters',
 		price: 199,
 		image: '/images/strawberry.webp',
 		featured: false,
