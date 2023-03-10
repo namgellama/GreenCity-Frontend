@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { HiShoppingCart } from 'react-icons/hi';
+import { FaBars, FaTimes, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { HiOutlineMail, HiShoppingCart } from 'react-icons/hi';
 import Logo from '../../assets/logo.png';
 
 function Navbar() {
@@ -71,11 +71,44 @@ function Navbar() {
 						<div className="flex items-center">
 							<HiShoppingCart size={25} className="mr-1" />
 							Cart
-							{/* <p className="ml-1">({size})</p> */}
 						</div>
 					</Link>
 				</li>
 			</ul>
+			{/* Social icons */}
+			<div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+				<ul>
+					<li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#333]">
+						<a
+							className="flex justify-between items-center w-full text-white"
+							href="mailto: greencitynp@gmail.com"
+							target="_blank"
+						>
+							Email <HiOutlineMail size={30} color="white" />
+						</a>
+					</li>
+					<li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-blue-600">
+						<a
+							className="flex justify-between items-center w-full text-white"
+							href="https://www.linkedin.com/in/namgel-lama-9b2164193/"
+							target="_blank"
+						>
+							Instagram
+							<FaInstagram size={30} color="white" />
+						</a>
+					</li>
+					<li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+						<a
+							className="flex justify-between items-center w-full text-white"
+							href="https://www.facebook.com/profile.php?id=100089835586096"
+							target="_blank"
+						>
+							<span className="pr-3">Facebook</span>{' '}
+							<FaFacebook size={30} color="white" />
+						</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	);
 }
