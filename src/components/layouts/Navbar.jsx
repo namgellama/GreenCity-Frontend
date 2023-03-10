@@ -9,7 +9,7 @@ function Navbar() {
 	const handleClick = () => setOpen(!open);
 
 	return (
-		<nav className="w-full sticky top-0 bg-white text-black text-lg font-medium z-10 flex items-center justify-between py-2 px-4 lg:px-6 md:flex-row md:py-1 lg:flex-row lg:py-0 shadow-lg">
+		<nav className="w-full sticky top-0 bg-white text-black text-lg font-medium z-10 flex items-center justify-between py-2 pl-4 lg:pl-8 pr-8 md:flex-row md:py-1 lg:flex-row lg:py-0 shadow-lg">
 			<Link to="/" className="flex items-center md:mb-2 z-10 lg:mt-1 w-full">
 				<img className="w-[45px] md:mb-2 lg:mb-0" src={Logo} alt="Logo Image" />
 				<div className="ml-2 mt-2">
@@ -32,7 +32,7 @@ function Navbar() {
 			</div>
 
 			<ul
-				className={`w-full flex flex-col items-start bg-white absolute top-10 left-0 mt-3 pl-5 py-3 lg:static lg:flex lg:flex-row lg:justify-end lg:mt-0 lg:py-2 opacity-100  ${
+				className={`w-full flex flex-col items-start bg-white absolute top-10 left-0 mt-3 pl-2 py-3 lg:static lg:flex lg:flex-row lg:justify-end lg:mt-0 lg:py-2 opacity-100  ${
 					open ? 'top-0' : 'opacity-0 hidden'
 				}`}
 			>
