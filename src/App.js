@@ -11,13 +11,15 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Routes>
-				<Route exact path="/" element={<HomePage />} />
-				<Route exact path="/products/" element={<ProductPage />} />
-				<Route path="/products/:id" element={<ProductDetail />} />
-				<Route path="/about/" element={<AboutPage />} />
-				<Route path="/cart/" element={<CartPage />} />
-			</Routes>
+			<main className="min-h-[85vh] md:min-h-[90vh] lg:min-h-[82vh]">
+				<Routes>
+					<Route exact path="/" element={<HomePage />} />
+					<Route exact path="/products/" element={<ProductPage />} />
+					<Route path="/products/:id" element={<ProductDetail />} />
+					<Route path="/about/" element={<AboutPage />} />
+					<Route path="/cart/" element={<CartPage />} />
+				</Routes>
+			</main>
 			<Footer />
 		</>
 	);
