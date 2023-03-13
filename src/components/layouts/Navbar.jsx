@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaFacebook, FaInstagram } from 'react-icons/fa';
+import {
+	FaBars,
+	FaTimes,
+	FaFacebook,
+	FaInstagram,
+	FaPhoneAlt,
+} from 'react-icons/fa';
 import { HiOutlineMail, HiShoppingCart } from 'react-icons/hi';
 import Logo from '../../assets/logo.png';
 
@@ -55,9 +61,9 @@ function Navbar() {
 				>
 					<Link
 						className="text-black hover:text-gray-400 duration-200"
-						to="/contact"
+						to="/about"
 					>
-						Contact
+						About
 					</Link>
 				</li>
 				<li
@@ -78,6 +84,15 @@ function Navbar() {
 			{/* Social icons */}
 			<div className="hidden lg:flex fixed flex-col top-[35%] left-0">
 				<ul>
+					<li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-red-500">
+						<a
+							className="flex justify-between items-center w-full text-white"
+							href="tel:+9779826747001"
+							target="_blank"
+						>
+							Phone <FaPhoneAlt size={28} color="white" />
+						</a>
+					</li>
 					<li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#333]">
 						<a
 							className="flex justify-between items-center w-full text-white"
